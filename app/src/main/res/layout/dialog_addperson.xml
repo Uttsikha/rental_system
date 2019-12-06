@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:id="@+id/add_ser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#000080"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="@dimen/_10ssp"
+        android:scaleType="center"
+        android:text="Rentee Details"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/_20ssp" />
+
+    <EditText
+        android:id="@+id/renteename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:fontFamily="casual"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="@dimen/_10sdp" />
+
+    <EditText
+        android:id="@+id/renteenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:fontFamily="casual"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:padding="@dimen/_10sdp" />
+
+    <EditText
+        android:id="@+id/renteeid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:fontFamily="casual"
+        android:hint="Citizenship ID"
+        android:inputType="number"
+        android:padding="@dimen/_10sdp" />
+
+    <EditText
+        android:id="@+id/renteeaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:fontFamily="casual"
+        android:hint="Address"
+        android:inputType="text"
+        android:padding="@dimen/_10sdp" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Family Size"
+          android:layout_margin="@dimen/_10sdp"
+          android:layout_weight="1"
+          android:background="#000080"
+          android:fontFamily="monospace"
+          android:padding="@dimen/_10sdp"
+          android:textColor="#ffffff"
+          />
+      <Spinner
+          android:id="@+id/spinner"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:padding="@dimen/_10sdp"
+          android:textColor="#000080"/>
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Joined"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="#000080"
+            android:fontFamily="monospace"
+            android:padding="@dimen/_10sdp"
+            android:textColor="#ffffff"
+            />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                    <DatePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:datePickerMode="spinner"
+                        android:calendarViewShown="false"
+            />
+            </ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+     >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="#000080"
+            android:fontFamily="monospace"
+            android:id="@+id/btn_AddP"
+            android:padding="@dimen/_10sdp"
+            android:text="Add"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancelP"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="#000080"
+            android:fontFamily="monospace"
+            android:padding="@dimen/_10sdp"
+            android:text="Cancel"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>

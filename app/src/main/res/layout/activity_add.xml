@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type of Room"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="#000080"
+            android:layout_weight="1"/>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+            
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bedroom"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#000080"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Living Room"
+
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#000080"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kitchen"
+
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#000080"/>
+
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Price (in Rs.)"
+
+            android:layout_gravity="center"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="#000080"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberSigned|number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:text="Room Status"
+            android:textColor="#000080"
+            android:textSize="@dimen/_20sdp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/radioStatus">
+
+            <RadioButton
+                android:id="@+id/btnHire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/_10sdp"
+                android:text="On Hire"
+                android:textColor="#000080"
+                android:textSize="@dimen/_15sdp" />
+
+            <RadioButton
+                android:id="@+id/btnRent"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+
+                android:text="On Rent"
+                android:textColor="#000080"
+                android:textSize="@dimen/_15sdp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#000080"
+        android:padding="@dimen/_10sdp"
+        android:text="Add Room"
+        android:onClick="add"
+        android:textColor="#ffffff"
+        tools:ignore="OnClick" />
+</LinearLayout>

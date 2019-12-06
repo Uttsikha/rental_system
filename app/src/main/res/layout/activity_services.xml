@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Services">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="#000000"
+                android:padding="@dimen/_10sdp"
+                android:text="Electricity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="casual"
+                android:padding="@dimen/_10sdp"
+                android:text="Rate (in Rs.)" />
+
+            <EditText
+                android:id="@+id/electricity_rate"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberSigned|number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="per unit"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Water"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="#000000"
+
+                android:padding="@dimen/_10sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="casual"
+                android:padding="@dimen/_10sdp"
+                android:text="Rate (in Rs.)" />
+
+            <EditText
+                android:id="@+id/water_rate"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberSigned|number" />
+
+            <TextView
+                android:id="@+id/sunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="per month"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="#000000"
+
+            android:padding="@dimen/_10sdp"
+            android:text="Television" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+            android:text="Rate (in Rs.)"
+            android:padding="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/tv_rate"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberSigned|number" />
+
+        <TextView
+            android:id="@+id/sunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="per month"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="#000000"
+
+                android:padding="@dimen/_10sdp"
+                android:text="Telephone" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="casual"
+                android:text="Rate (in Rs.)"
+                android:padding="@dimen/_10sdp" />
+
+            <EditText
+                android:id="@+id/phone__rate"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberSigned|number" />
+
+            <TextView
+                android:id="@+id/sunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="per call"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="#000000"
+
+                android:padding="@dimen/_10sdp"
+                android:text="Internet" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="casual"
+                android:text="Rate (in Rs.)"
+                android:padding="@dimen/_10sdp" />
+
+            <EditText
+                android:id="@+id/net_rate"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberSigned|number" />
+
+            <TextView
+                android:id="@+id/sunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="per month"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnAddS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:background="#000080"
+            android:fontFamily="monospace"
+            android:padding="@dimen/_10sdp"
+            android:text="Save"
+            android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:background="#000080"
+        android:fontFamily="monospace"
+        android:padding="@dimen/_10sdp"
+        android:text="Clear"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
+</LinearLayout>
